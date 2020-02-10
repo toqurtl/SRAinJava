@@ -65,10 +65,10 @@ public class Activity {
     }
 
     public void printActivity(){
-        System.out.println(activityID+" "+plannedDuration+" "+plannedCost+" "+plannedcpDate[0]+" "+plannedcpDate[1]+" "+plannedcpDate[2]+" "+plannedcpDate[3]+" "+plannedfloatValue[0]+" "+preActs.size()+" "+sucActs.size());
+        System.out.println(activityID+" "+plannedDuration+" "+plannedCost+" "+plannedcpDate[0]+" "+plannedcpDate[1]+" "+plannedcpDate[2]+" "+plannedcpDate[3]+" "+plannedfloatValue[0]);
     }
     public void printActual(){
-        System.out.println(activityID+" "+actualDuration+" "+actualCost+" "+net.cpDate[0]+" "+net.cpDate[1]+" "+net.cpDate[2]+" "+net.cpDate[3]+" "+net.floatValue[0]+" "+preActs.size()+" "+sucActs.size());
+        System.out.println(activityID+" "+actualDuration+" "+actualCost+" "+net.cpDate[0]+" "+net.cpDate[1]+" "+net.cpDate[2]+" "+net.cpDate[3]+" "+net.floatValue[0]);
     }
 
     public boolean isTime(int time){

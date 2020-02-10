@@ -1,7 +1,5 @@
 ### inseok ###
-input/
 output/
-*.csv
 out/
 .idea/
 *.iml

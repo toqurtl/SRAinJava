@@ -155,7 +155,7 @@ public class MCSResult extends ArrayList<ScheduleResult> {
 
     public double getCI(String ID){
         int sum = 0;
-        DescriptiveStatistics des = this.actDurationStats.get(ID);
+        DescriptiveStatistics des = this.actTFStats.get(ID);
         int size = des.getValues().length;
         for(int i=0;i<size;i++){
             double value = des.getElement(i);
@@ -177,7 +177,8 @@ public class MCSResult extends ArrayList<ScheduleResult> {
             double SD = durationStat.getElement(i);
             double check = 0;
             if((AD+SL)!=0){
-                check = AD*SD/((AD+SL)*getDurationMean());
+//                check = (AD*SD)/((AD+SL)*getDurationMean());
+                  check = (AD/(AD+SL))*SD/getDurationMean();
             }else{
                 check = 0;
             }

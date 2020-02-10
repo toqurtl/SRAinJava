@@ -61,7 +61,7 @@ public class MCSResultOutput {
             for(String s : result.activityIDs) {
                 Activity a = schedule.getActivity(s);
                 bw.write(s+","+a.wbsSeq+","+a.actSeq+","+result.getDurationMean(s)+","+result.getDurationDevi(s)+","+result.getTFMean(s)+","+result.getTFDevi(s)
-                        +","+result.getCI(s)+","+result.getSI(s)+","+result.getSSI(s)+","+result.getCRI(s)+"\n");
+                        +","+result.getCI(s)+","+result.getSI(s)+","+result.getSSI(s)+","+result.getCRI(s)+","+a.plannedfloatValue[0]+"\n");
             }
 
             bw.close();
